@@ -223,7 +223,11 @@ section {
     padding: 20px 30px;
 }  
 
-#hero .card:first-child {
+#hero .card-special {
+    margin-bottom: 20px;
+}
+
+#hero .card-special:first-child {
     padding-bottom: 0;
 }
 
@@ -432,7 +436,7 @@ footer {
 
     .card-special {
         max-width: 760px;
-        width: calc(((100% / 3) * 2 ));
+        width: calc(((100% / 3) - 40px)* 2 );
         padding: 20px;
         margin-bottom: 30px; 
     }
