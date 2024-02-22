@@ -55,7 +55,6 @@ img {
 }
 
 p {
-    font-weight: 700;
     line-height: 1.8;
 }
 
@@ -207,7 +206,7 @@ section {
     scroll-margin-top: 75;
 }
 
-
+/* SECTION HERO */
 .card {
     padding: 10px;
     margin-bottom: 20px;
@@ -215,6 +214,10 @@ section {
 
 div.card:first-child {
     padding-bottom: 0;
+}
+
+#hero p {
+    font-weight: 700;
 }
 
 .img-content {
@@ -245,10 +248,11 @@ div.card:first-child {
     font-weight: 500;
 }
 
+/* SECTION PLANNING */
 #planning .card {
     color: var(--footer-color);
+    font-weight: 700;
 }
-
 
 #planning .btn {
     background-color: var(--violet-section-color);
@@ -265,6 +269,15 @@ div.card:first-child {
     color: var(--footer-color);
 }
 
+/* SECTION TESTIMONIALS */
+#testimonials h2{
+    color: var(--violet-section-color);
+}  
+
+#testimonials p {
+    font-weight: 500;
+    font-size: 1.2em;
+}
 /* FOOTER */
 footer {
     background-color: var(--footer-color);
