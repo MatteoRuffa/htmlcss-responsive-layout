@@ -276,6 +276,9 @@ section {
     font-weight: 500;
 }
 
+#planning .card {
+    padding: 70px;
+}
 #planning a {
     color: var(--footer-color);
 }
@@ -519,5 +522,26 @@ footer {
     .card-special div:last-child {
         width: 40%;
         align-self: flex-end;
+    }
+
+    /* SECTION PLANNING */
+    .big-card-planning {
+        display: flex;
+        justify-content: center;
+    }
+    .stategic {
+        max-width: 30%;
+        margin-right: 30px; 
+    }
+
+    #planning .card {
+        width: 30%;
+        padding: 40px;
+        margin-left: 20px;
+        align-self: flex-end;
+    }
+
+    #planning .card img {
+        
     }
 }
