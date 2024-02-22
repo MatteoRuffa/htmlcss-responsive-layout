@@ -86,7 +86,7 @@ h3 {
 }
 
 .card {
-    padding: 20px 0;
+    padding: 20px 0px;
     margin-bottom: 30px;
 }
 
@@ -218,7 +218,11 @@ section {
 
 /* SECTION HERO */
 
-div.card:first-child {
+#hero .card {
+    padding: 20px 30px;
+}  
+
+#hero .card:first-child {
     padding-bottom: 0;
 }
 
@@ -232,7 +236,7 @@ div.card:first-child {
 }
 
 .img-content img {
-    width: 90%;
+    max-width: 220px;
     margin: 0 auto;
 }
 
@@ -283,6 +287,7 @@ div.card:first-child {
 #testimonials p {
     font-weight: 500;
     font-size: 1.2em;
+    padding: 20px 0;
 }
 
 .img-circle {
@@ -395,4 +400,29 @@ footer {
     font-size: 4em;
     font-weight: 700;
     padding: 20px 0;
+}
+
+/* RESPONSIVE SOLUCIONS */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max: width 1200px; 
+    }
+
+    .big-card {
+        width: calc((100% /2) - 130px);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-content img {
+        max-width: 240px;
+        margin-left: 0px;
+    }
+
+    #testimonials .card {
+        flex-direction: row;
+        padding: 20px;
+        text-align: left;
+    }
 }
