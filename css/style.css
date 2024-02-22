@@ -406,14 +406,22 @@ footer {
 
 @media screen and (min-width: 768px) {
     .container {
-        max: width 1200px; 
+        width: auto%; 
     }
 
     .big-card {
-        width: calc((100% /2) - 130px);
         display: flex;
         flex-wrap: wrap;
     }
+
+    #benefit .container {
+        padding: 30px 0;
+    }
+    #benefit .card {
+        width: calc((100% / 2) - 60px);
+        margin: 30px;
+    }
+
 
     .img-content img {
         max-width: 240px;
