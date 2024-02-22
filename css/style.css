@@ -131,9 +131,6 @@ h3 {
 .text-contrast {
     color: var(--footer-color);
 }
-.text-vivid {
-
-}
 
 /* BORDER */
 .small-rounded {
@@ -221,10 +218,11 @@ section {
 
 #hero .card {
     padding: 20px 30px;
-}  
+}
 
-#hero .card-special {
-    margin-bottom: 20px;
+#hero .card:nth-child(4),
+#hero .card:nth-child(3) {
+    margin-right: 20px;
 }
 
 #hero .card-special:first-child {
@@ -290,7 +288,7 @@ section {
 /* SECTION TESTIMONIALS */
 #testimonials h2{
     color: var(--violet-section-color);
-}  
+}
 
 #testimonials p {
     font-weight: 500;
@@ -416,7 +414,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 100%; 
+        width: 100%;
     }
 
     .img-content img {
@@ -430,21 +428,22 @@ footer {
 
     #hero .big-card {
         flex-wrap: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         width: 100%;
     }
 
     .card-special {
-        max-width: 760px;
-        width: calc(((100% / 3) - 40px)* 2 );
+        max-width: 780px;
+        width: calc(((100% / 3) - 30px)* 2 );
         padding: 20px;
-        margin-bottom: 30px; 
+        margin-right: 20px;
+        margin-bottom: 30px;
     }
 
     #hero .card {
         max-width: 380px;
         width: calc((100% / 3) - 40px);
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
     }
 
     /* SECTION BENEFIT */
@@ -536,7 +535,7 @@ footer {
     }
     .stategic {
         max-width: 30%;
-        margin-right: 30px; 
+        margin-right: 30px;
     }
 
     #planning .card {
