@@ -32,7 +32,7 @@ html {
     --violet-section-color: #9591DD;
     --white-section-color:#FFFFFF;
     --footer-color: #363636;
-    --azure-container: #BBDBFC;
+    --azure-container: #B5DDFF;
     --it-s-free: #EBBE76;
 }
 
@@ -47,14 +47,27 @@ body {
     padding: 20px;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    line-height: 1.8;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
 /* UTILITY */
 /* FLEX */
 /* TEXT */
 .text-center {
-
+    margin: 0 auto;
 }
 .text-light {
-
+    color: var(--header-color);
 }
 .text-contrast {
 
@@ -65,18 +78,22 @@ body {
 
 /* BORDER */
 .small-rounded {
-
+    border-radius: 20px;
 }
 
 .big-rounded {
-
+    border-radius: 40px;
 }
 
 .circle {
-
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-/* BG */
+/* BACKGROUND */
+.bg-light {
+    background-color: var(--azure-container);
+}
 .bg-contrast {
     background-color: var(--violet-section-color);
 }
@@ -98,6 +115,7 @@ header {
 }
 
 /* fare bene poi la posizione della barra */
+/* inzio HAMBURGUER MENÙ */
 header nav {
     position: relative;
 }
@@ -119,8 +137,17 @@ header nav a {
     display: block;
     padding: 5px 10px;
 }
-
+/* fine HAMBURGUER MENÙ */
 /* MAIN */
+section {
+    padding: 20px;
+    scroll-margin-top: 75;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
 /* FOOTER */
 footer {
@@ -129,3 +156,6 @@ footer {
 }
 
 /* ID SPECIFIC */
+#hero {
+    margin-top: 60px;
+}
