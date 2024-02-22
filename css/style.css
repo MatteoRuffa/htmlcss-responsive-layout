@@ -1,0 +1,131 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, summary {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+/* general */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header-color: #3C81F4;
+    --violet-section-color: #9591DD;
+    --white-section-color:#FFFFFF;
+    --footer-color: #363636;
+    --azure-container: #BBDBFC;
+    --it-s-free: #EBBE76;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* UTILITY */
+/* FLEX */
+/* TEXT */
+.text-center {
+
+}
+.text-light {
+
+}
+.text-contrast {
+
+}
+.text-vivid {
+
+}
+
+/* BORDER */
+.small-rounded {
+
+}
+
+.big-rounded {
+
+}
+
+.circle {
+
+}
+
+/* BG */
+.bg-contrast {
+    background-color: var(--violet-section-color);
+}
+
+/****** PAGE ******/
+/* HEADER */
+header {
+    background-color: var(--header-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* fare bene poi la posizione della barra */
+header nav {
+    position: relative;
+}
+
+header nav:hover ul {
+    display: block;
+}
+
+header nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: var(--header-color);
+    display: none;
+}
+
+header nav a {
+    display: block;
+    padding: 5px 10px;
+}
+
+/* MAIN */
+
+/* FOOTER */
+footer {
+    background-color: var(--footer-color);
+    padding: 20px;
+}
+
+/* ID SPECIFIC */
