@@ -291,6 +291,7 @@ section {
 }
 
 .img-circle {
+    max-width: 260px;
     width: 70%;
     aspect-ratio: 1 / 1;
     margin-top: 20px;
@@ -421,22 +422,23 @@ footer {
 
     #hero .big-card {
         flex-wrap: wrap;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         width: 100%;
+        
+       
     }
 
     .card-special {
         max-width: 760px;
         width: calc(((100% / 3) * 2 ));
-        margin-bottom: 30px;
         padding: 20px;
+        margin-bottom: 30px; 
     }
 
     #hero .card {
         max-width: 380px;
-        width: calc((100% / 3));
-        padding: 20;
-        
+        width: calc((100% / 3) - 40px);
+        margin-bottom: 30px; 
     }
 
     #benefit .container {
