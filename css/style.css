@@ -76,6 +76,7 @@ h3 {
     padding: 10px 50px;
     letter-spacing: 2px;
     font-weight: 700;
+    max-height: 40px;
 }
 
 .name {
@@ -313,7 +314,6 @@ p>i {
 }
 
 /* SECTION BENEFIT */
-
 #benefit h2 {
     color: var(--white-section-color);
 }
@@ -374,6 +374,7 @@ p>i {
     color: var(--violet-section-color);
     border-radius: 40px;
     width: 260px;
+    max-height: 70px;
     padding: 20px 50px;
     margin: 20px;
     letter-spacing: 2px;
@@ -424,8 +425,6 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        
-       
     }
 
     .card-special {
@@ -477,5 +476,48 @@ footer {
         flex-direction: row;
         padding: 20px;
         text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+    }
+
+
+    /* VEDERE ALLA FINE COME DIAVOLO FARE STO BENEDETTO HAMB.MEN */
+    header nav ul {
+        position: fixed;
+        right: 1000px;
+        /* background-color: var(--header-color); */
+        display: flex;
+        /* padding-bottom: 20px;
+        border-radius: 20px; */
+        box-shadow: 0px 0px 0px var(--header-color);
+    }
+
+    nav i {
+        display: none;
+    }
+
+    /* SECTION HERO */
+    .card-special {
+        display: flex;
+        padding: 0;
+    }
+
+    .card-special div:first-child {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .card-special div:last-child {
+        width: 40%;
+        align-self: flex-end;
     }
 }
