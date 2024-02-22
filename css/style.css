@@ -62,6 +62,17 @@ h3 {
 
 /* UTILITY */
 /* FLEX */
+.d-flex {
+    display: flex;
+}
+
+.space-btwn {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
 /* TEXT */
 .text-center {
     margin: 0 auto;
@@ -102,6 +113,7 @@ h3 {
 /* HEADER */
 header {
     background-color: var(--header-color);
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -109,9 +121,11 @@ header {
     margin: 0 auto;
     padding: 20px;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 0px 1px 3px var(--header-color);
+}
+
+.icons-header {
+    font-size: 1.6em;
 }
 
 /* fare bene poi la posizione della barra */
@@ -127,10 +141,17 @@ header nav:hover ul {
 header nav ul {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -20px;
     width: 200px;
     background-color: var(--header-color);
     display: none;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px var(--header-color);
+}
+
+header nav ul li {
+    padding: 10px;
 }
 
 header nav a {
