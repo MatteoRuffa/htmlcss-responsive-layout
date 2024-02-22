@@ -86,7 +86,7 @@ h3 {
 }
 
 .card {
-    padding: 20px;
+    padding: 20px 0;
     margin-bottom: 30px;
 }
 
@@ -335,10 +335,38 @@ p>i {
     margin: 20px 0;
 }
 
+/* SECTION ABOUT-US */
+#about-us h2 {
+    color: var(--violet-section-color);
+    font-size: 3em;
+}
+
+#about-us p {
+    font-size: 1.1em;
+}
+
+#about-us .card p {
+    color: var(--violet-section-color);
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 20px 0;
+}
+ #about-us .btn {
+    background-color: var(--violet-section-color);
+    padding: 8px 16px;
+    width: 210px;
+    letter-spacing: 0px;
+    font-weight: 500;
+ }
+.btn span {
+    padding: 0 0 0 10px;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--footer-color);
     padding: 20px;
+
 }
 
 /* ID SPECIFIC */
