@@ -443,6 +443,7 @@ footer {
         margin-bottom: 30px; 
     }
 
+    /* SECTION BENEFIT */
     #benefit .container {
         padding: 30px 0;
     }
@@ -494,15 +495,15 @@ footer {
 
 
     /* VEDERE ALLA FINE COME DIAVOLO FARE STO BENEDETTO HAMB.MEN */
-    header nav ul {
+    /* header nav ul {
         position: fixed;
         right: 1000px;
-        /* background-color: var(--header-color); */
+        background-color: var(--header-color);
         display: flex;
-        /* padding-bottom: 20px;
-        border-radius: 20px; */
+        padding-bottom: 20px;
+        border-radius: 20px;
         box-shadow: 0px 0px 0px var(--header-color);
-    }
+    } */
 
     nav i {
         display: none;
@@ -541,7 +542,8 @@ footer {
         align-self: flex-end;
     }
 
-    #planning .card img {
-        
+    /* SECTION BENEFIT */
+    #benefit .card {
+        width: calc((100% / 3) - 90px);
     }
 }
