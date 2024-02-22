@@ -57,16 +57,11 @@ img {
 p {
     font-weight: 700;
     line-height: 1.8;
-    color: var(--footer-color);
-    margin: 15px;
-}
-
-#hero p {
-    color: var(--color-text-hero);
 }
 
 h2 {
-
+    font-size: 2.2em;
+    padding: 20px 0;
 }
 
 h3 {
@@ -91,6 +86,15 @@ h3 {
     display: flex;
 }
 
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-cnt {
+    justify-content: center;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -102,7 +106,7 @@ h3 {
     justify-content: space-between;
 }
 
-.align-items-cent {
+.align-items {
     align-items: center;
 }
 
@@ -141,6 +145,9 @@ h3 {
 }
 .bg-contrast {
     background-color: var(--violet-section-color);
+}
+.bg-white {
+    background-color: var(--white-section-color);
 }
 
 /****** PAGE ******/
@@ -224,6 +231,40 @@ div.card:first-child {
     padding: 20px;
 }
 
+.stategic {
+    color: white;
+    padding: 20px 0;
+}
+
+.stategic img {
+    padding: 20px 0px 50px 0;
+}
+
+.stategic p {
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+#planning .card {
+    color: var(--footer-color);
+}
+
+
+#planning .btn {
+    background-color: var(--violet-section-color);
+    border: 1px solid var(--violet-section-color);
+    border-radius: 50%;
+    width: 42px;
+    height: 100%;
+    padding:  10px 10px ;
+    margin: 0px;
+    font-weight: 500;
+}
+
+#planning a {
+    color: var(--footer-color);
+}
+
 /* FOOTER */
 footer {
     background-color: var(--footer-color);
@@ -233,4 +274,9 @@ footer {
 /* ID SPECIFIC */
 #hero {
     margin-top: 90px;
+}
+
+#hero p {
+    color: var(--color-text-hero);
+    margin: 20px;
 }
