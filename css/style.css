@@ -372,6 +372,7 @@ p>i {
     background-color: var(--white-section-color);
     color: var(--violet-section-color);
     border-radius: 40px;
+    width: 260px;
     padding: 20px 50px;
     margin: 20px;
     letter-spacing: 2px;
@@ -406,11 +407,19 @@ footer {
 
 @media screen and (min-width: 768px) {
     .container {
-        width: auto%; 
+        width: 100%; 
+    }
+
+    .img-content img {
+        max-width: 240px;
+        margin-left: 0px;
     }
 
     .big-card {
         display: flex;
+    }
+
+    #benefit .big-card {
         flex-wrap: wrap;
     }
 
@@ -422,10 +431,23 @@ footer {
         margin: 30px;
     }
 
+    #about-us h2 {
+        font-size: 4em;
+    }
 
-    .img-content img {
-        max-width: 240px;
-        margin-left: 0px;
+    .card-left {
+        width: 60%;
+        padding: 50px;
+    }
+
+    .card-right {
+        width: 40%;
+        padding: 30px;
+        align-content: center;
+    }
+
+    .img-circle {
+        width: 100%;
     }
 
     #testimonials .card {
